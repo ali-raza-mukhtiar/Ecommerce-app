@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon"><i class="fas fa-shopping-bag"></i></span>
+                <span class="logo-text">ShopEasy</span>
+            </div>
+            <div class="nav-search">
+                <input type="text" placeholder="Search products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="#"><i class="fas fa-user"></i> Account</a>
+                <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="#" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+        <div class="hero-content">
+            <h1>Welcome to ShopEasy</h1>
+            <p>Discover amazing products at unbeatable prices</p>
+            <button class="shop-now-btn">Shop Now</button>
+        </div>
+    </div>
+
+    <!-- Product Categories -->
+    <div class="categories">
+        <button class="category-btn active" data-category="all">All Products</button>
+        <button class="category-btn" data-category="electronics">Electronics</button>
+        <button class="category-btn" data-category="jewelery">Jewelry</button>
+        <button class="category-btn" data-category="men's clothing">Men's Clothing</button>
+        <button class="category-btn" data-category="women's clothing">Women's Clothing</button>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="products-container" id="products-container">
+        <!-- Products will be loaded here dynamically -->
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i> Loading products...
+        </div>
+    </div>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Shopping Cart</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be loaded here -->
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <footer class="amazon-footer">
+      <div class="footer-content">
+          <div class="footer-section">
+              <h4>Get to Know Us</h4>
+              <ul>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">About Amazon</a></li>
+                  <li><a href="#">Investor Relations</a></li>
+                  <li><a href="#">Amazon Devices</a></li>
+                  <li><a href="#">Amazon Science</a></li>
+              </ul>
+          </div>
+  
+          <div class="footer-section">
+              <h4>Make Money with Us</h4>
+              <ul>
+                  <li><a href="#">Sell products on shop easy</a></li>
+                  <li><a href="#">Sell on shop easy Business</a></li>
+                  <li><a href="#">Sell apps on shop easy</a></li>
+                  <li><a href="#">Become an Affiliate</a></li>
+                  <li><a href="#">Advertise Your Products</a></li>
+                  <li><a href="#">Self-Publish with Us</a></li>
+                  <li><a href="#">Host an shop easy Hub</a></li>
+                  <li><a href="#" class="see-more">See More Make Money with Us</a></li>
+              </ul>
+          </div>
+  
+          <div class="footer-section">
+              <h4>shop easy Payment Products</h4>
+              <ul>
+                  <li><a href="#">shop easy Business Card</a></li>
+                  <li><a href="#">Shop with Points</a></li>
+                  <li><a href="#">Reload Your Balance</a></li>
+                  <li><a href="#">shop easy Currency Converter</a></li>
+              </ul>
+          </div>
+          <div class="footer-logo">shop easy</div>
+          <div class="footer-links">
+              <a href="#">English</a>
+              <a href="#">USD - U.S. Dollar</a>
+              <a href="#">United States</a>
+          </div>
+      </div>
+  
+      <button class="back-to-top" id="backToTop" title="Go to top">Back to Top</button>
+  
+          <div class="footer-section">
+              <h4>Let Us Help You</h4>
+              <ul>
+                  <li><a href="#">shop easy and COVID-19</a></li>
+                  <li><a href="#">Your Account</a></li>
+                  <li><a href="#">Your Orders</a></li>
+                  <li><a href="#">Shipping Rates & Policies</a></li>
+                  <li><a href="#">Returns & Replacements</a></li>
+                  <li><a href="#">Manage Your Content and Devices</a></li>
+                  <li><a href="#">Help</a></li>
+              </ul>
+          </div>
+      </div>
+  
+      <div class="footer-bottom">
+          <div class="footer-logo">shop easy</div>
+          <div class="footer-links">
+              <a href="#">English</a>
+              <a href="#">USD - U.S. Dollar</a>
+              <a href="#">United States</a>
+          </div>
+      </div>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
